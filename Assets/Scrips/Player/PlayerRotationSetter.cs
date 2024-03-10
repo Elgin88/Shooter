@@ -30,7 +30,7 @@ public class PlayerRotationSetter : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Awake()
     {
         _playerKeyboardController = GetComponent<PlayerKeyboardPoller>();
 

@@ -28,7 +28,7 @@ public class PlayerDirectionSetter : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Awake()
     {
         _playerKeycoardController = GetComponent<PlayerKeyboardPoller>();
 

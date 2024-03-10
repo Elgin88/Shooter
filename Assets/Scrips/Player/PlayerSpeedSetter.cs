@@ -12,7 +12,7 @@ public class PlayerSpeedSetter : MonoBehaviour
 
     public float CurrentSpeed => _currentSpeed;
 
-    private void Start()
+    private void Awake()
     {
         _playerKeyboardController = GetComponent<PlayerKeyboardPoller>();
 

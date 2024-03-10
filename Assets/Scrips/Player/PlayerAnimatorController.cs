@@ -27,7 +27,7 @@ public class PlayerAnimatorController : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Awake()
     {
         _playerSpeedSetter = GetComponent<PlayerSpeedSetter>();
         _animator = GetComponent<Animator>();

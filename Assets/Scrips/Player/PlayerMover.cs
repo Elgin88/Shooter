@@ -27,7 +27,7 @@ public class PlayerMover : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Awake()
     {
         _playerDirectionSetter = GetComponent<PlayerDirectionSetter>();
         _playerSpeedController = GetComponent<PlayerSpeedSetter>();

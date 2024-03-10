@@ -14,7 +14,7 @@ public class PlayerKeyboardPoller : MonoBehaviour
     public bool IsMoveRight => _isMoveRight;
     public bool IsMoveLeft => _isMoveLeft;
 
-    private void Start()
+    private void Awake()
     {
         StartCheckButtonKey();
     }
@@ -57,10 +57,7 @@ public class PlayerKeyboardPoller : MonoBehaviour
 
     private void StopCheckButtonKey()
     {
-        if (_checkPressedButtons != null)
-        {
-            StopCoroutine(_checkPressedButtons);
-            _checkPressedButtons = null;
-        }
+        StopCoroutine(_checkPressedButtons);
+        _checkPressedButtons = null;
     }
 }
